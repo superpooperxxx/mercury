@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>Mercury</title>
+</head>
+<body>
+	<div class="modal">
+		<div class="fade"></div>
+		<div class="login-modal">
+			<h3>Login</h3>
+			<form>
+				<input type="text" placeholder="Your login">
+				<input type="password" placeholder="Your password">
+				<div class="button">Login</div>
+			</form>
+		</div>
+	</div>
+	<section class="main-section">
+		<div class="navbar">
+			<div class="logo">
+				<a href="#"><img src="img/Logo.png" alt="logo"></a>
+			</div>
+			<div class="login-menu">
+				<ul class="menu">
+					<li><a href="#features">Features</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<i class="fas fa-bars" id="menu-icon"></i>
+				<span class="btn login-btn">Login</span>
+			</div>
+		</div>
+		<ul class="mobile-menu">
+			<li><a href="#features">Features</a></li>
+			<li><a href="#pricing">Pricing</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><span class="btn login-btn">Login</span></li>
+		</ul>
+		<h1>Grow Your business with Mercury</h1>
+		<h3>Your partner in crime!</h3>
+		<div class="btn get-started-btn">Get started</div>
+	</section>
+	<!-- <section class="dashboard-wrapper"> -->
+		<img class="dashboard" src="img/dashboard.png" alt="dashboard">
+	<!-- </section> -->
+	<section class="features" id="features">
+		<div class="feature-item">
+			<img src="img/workflow.png" alt="">
+			<h4>Manage Your Workflow</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus obcaecati possimus esse maxime architecto cum modi quaerat quidem alias facere!</p>
+			<a href="" class="btn see-more-btn">See more</a>
+		</div>
+		<div class="feature-item">
+			<img src="img/analytics.png" alt="">
+			<h4>Analytics & Insights</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perspiciatis ex minima quos voluptate, tempora magnam, totam fugiat assumenda consequatur.</p>
+			<a href="" class="btn see-more-btn">See more</a>
+		</div>
+		<div class="feature-item">
+			<img src="img/organize.png" alt="">
+			<h4>Organize Your Deadlines</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quod, aperiam ex eum? Ad saepe, dolorum dicta voluptates architecto repellendus!</p>
+			<a href="" class="btn see-more-btn">See more</a>
+		</div>
+	</section>
+	<section class="browser">
+		<div class="browser-content">
+			<h2>All You need is a browser!</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				<br>
+				<br>
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+				ut aliquip ex ea commodo consequat. 
+			</p>
+			<div class="browser-feature">
+				<span><i class="far fa-check-circle"></i>Lorem ipsum dolor sit amet consectetur</span>
+				<span><i class="far fa-check-circle"></i>Ut enim ad minim veniam quis nostrud</span>
+			</div>
+		</div>
+		<div class="browser-img">
+			<img src="img/browser.png" alt="">
+		</div>
+	</section>
+	<section class="drag-and-drop">
+		<div class="drag">
+			<div class="in-progres">
+				<div class="space-between progres-completed">
+					<span>
+						In Progres 
+						<span style="color: #8492af" id="in-progres-number">(3)</span>
+						<span>
+							<i class="fas fa-chevron-right" style="color: #8492af"></i>
+						</span>
+					</span>
+				</div>
+				<div class="task">
+					<div style="display: flex; align-items: center;">
+						<div class="blue-circle-2">N</div>
+						<div class="task-content">
+							<h6>New logo for Apple</h6>
+							<p><i class="far fa-clock"></i> 1 day left</p>
+						</div>
+					</div>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<div class="task">
+					<div style="display: flex; align-items: center;">
+						<div class="blue-circle-2">D</div>
+						<div class="task-content">
+							<h6>Dauly UI Kit</h6>
+							<p><i class="far fa-clock"></i> 5 days left</p>
+						</div>
+					</div>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<div class="task" draggable="true" id="draggable-task">
+					<div style="display: flex; align-items: center;">
+						<div class="blue-circle-2">B</div>
+						<div class="task-content">
+							<h6>Business Cards</h6>
+							<p style="color: #f83c7b;" id="draggable-condition"><i class="far fa-clock"></i> 2 days left</p>
+						</div>
+					</div>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+			</div>
+			<div class="completed">
+				<div class="progres-completed">
+					Completed 
+					<span style="color: #8492af" id="completed-number">(2)</span>
+				</div>
+				<div class="task">
+					<div style="display: flex; align-items: center;">
+						<div class="blue-circle-2">F</div>
+						<div class="task-content">
+							<h6>Free PSD Template vol. 1</h6>
+							<p style="color: #00bf1b"><i class="far fa-check-circle"></i> Completed!</p>
+						</div>
+					</div>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<div class="task">
+					<div style="display: flex; align-items: center;">
+						<div class="blue-circle-2">I</div>
+						<div class="task-content">
+							<h6>Iconset vol. 1</h6>
+							<p style="color: #00bf1b"><i class="far fa-check-circle"></i> Completed!</p>
+						</div>
+					</div>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+				<div class="drop-here">Drop here</div>
+			</div>
+		</div>
+		<div class="drag-content">
+			<h2>Drag & Drop</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				<br><br>
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+			</p>
+		</div>
+	</section>
+	<section class="template" id="blog">
+		<h2>Powerfull PSD Template</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+		</p>
+		<div class="template-content">
+			<div class="template-content-text">
+				<h4>Clean & modern layout</h4>
+				<div class="blue-line-and-circle">
+					<div class="blue-line"></div>
+					<div class="blue-circle"></div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<img src="img/template.png" alt="">
+			<div class="template-content-text">
+				<h4>Easy to customize</h4>
+				<div class="blue-line-and-circle">
+					<div class="blue-line"></div>
+					<div class="blue-circle"></div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+		<!-- MOBILE  -->
+
+
+			<div class="mobile-template-content-text">
+				<h4>Clean & modern layout</h4>
+				<div class="blue-line-and-circle">
+					<div class="blue-line"></div>
+					<div class="blue-circle"></div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="mobile-template-content-text">
+				<h4>Easy to customize</h4>
+				<div class="blue-line-and-circle">
+					<div class="blue-line"></div>
+					<div class="blue-circle"></div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+	</section>
+	<section class="pricing" id="pricing">
+		<h2>Check our pricing!</h2>
+		<div class="pricing-items">
+			<div class="price-item">
+				<h5>Bronze plan</h5>
+				<div class="price"><i class="fas fa-dollar-sign"></i>19<span class="month">/mon</span></div>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-times-circle red"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-times-circle red"></i>Lorem ipsum dolor sit am</p>
+			</div>
+			<div class="price-item">
+				<h5>Silver plan</h5>
+				<div class="price"><i class="fas fa-dollar-sign"></i>49<span class="month">/mon</span></div>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-times-circle red"></i>Lorem ipsum dolor sit am</p>
+			</div>
+			<div class="price-item">
+				<h5>Gold plan</h5>
+				<div class="price"><i class="fas fa-dollar-sign"></i>99<span class="month">/mon</span></div>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+				<p><i class="far fa-check-circle blue"></i>Lorem ipsum dolor sit am</p>
+			</div>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+		</p>
+		<div class="join-now">
+			<div class="gray-line"></div>
+			<div class="btn join-now-btn">Join now</div>
+			<div class="gray-line"></div>
+		</div>
+	</section>
+	<footer id="contact">
+		<span class="rights">© 2016 Merkury All Right Reserved</span>
+		<div class="menu-socials">
+			<ul class="menu bottom-menu">
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="socials">
+				<a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a>
+			</div>
+		</div>
+	</footer>
+	<script src='js/script.js'></script>
+</body>
+</html>
